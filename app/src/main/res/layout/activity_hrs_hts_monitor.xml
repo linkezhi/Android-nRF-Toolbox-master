@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="no.nordicsemi.android.nrftoolbox.HrsHtsMonitorActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_tap"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/title_bg"
+        >
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            android:background="@android:color/transparent"
+            android:scaleType="center"
+            android:id="@+id/returnRegister"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="温度"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            />
+        <ImageButton
+            android:layout_width="48dp"
+            android:id="@+id/ib_more"
+            android:layout_height="match_parent"
+            android:src="@drawable/more"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:padding="12dp"
+            android:layout_alignParentRight="true"
+             />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:id="@+id/viewpager"
+        android:layout_weight="1"></android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:id="@+id/rg_music_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#434e5b"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        >
+        <RadioButton
+            android:id="@+id/rb_artist"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="温度"
+            android:textColor="#ffffff"
+            android:checked="true"
+            android:drawableTop="@drawable/hts_selector"
+            android:gravity="center"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_album"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="心律"
+            android:textColor="#ffffff"
+            android:drawableTop="@drawable/hrs_selector"
+            android:gravity="center"
+          >
+        </RadioButton>
+
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context="no.nordicsemi.android.nrftoolbox.RegisterPicPopupWindow">
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:text="该号码已注册"
+            android:textColor="#ffffff"/>
+        <Button
+            android:id="@+id/fg_pwd"
+            style="@style/RegisterMenuButton"
+            android:text="忘记密码"/>
+        <Button
+            android:id="@+id/rt_login"
+            style="@style/RegisterMenuButton"
+            android:text="返回登录"
+            />
+        <Button
+            android:id="@+id/pop_quit"
+            style="@style/RegisterMenuButton"
+            android:text="取消"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

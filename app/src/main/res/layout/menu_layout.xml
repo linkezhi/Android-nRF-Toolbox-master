@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:background="@color/item_bg"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        style="@style/MenuTextViewStyle"
+        android:id="@+id/menu_history"
+        android:drawableLeft="@drawable/menu_history"
+        android:text="历史记录"/>
+   <View
+       android:layout_width="fill_parent"
+       android:layout_height="1dp"
+       android:background="#3a4250"></View>
+    <TextView
+        style="@style/MenuTextViewStyle"
+        android:id="@+id/menu_connect"
+        android:drawableLeft="@drawable/menu_connect"
+        android:text="连接"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#3a4250"></View>
+    <TextView
+        android:id="@+id/menu_account"
+        android:drawableLeft="@drawable/menu_account"
+        android:text="账户"
+        style="@style/MenuTextViewStyle" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#3a4250"></View>
+    <TextView
+        style="@style/MenuTextViewStyle"
+        android:id="@+id/menu_exit"
+        android:drawableLeft="@drawable/menu_exit"
+        android:text="退出登录"/>
+</LinearLayout>

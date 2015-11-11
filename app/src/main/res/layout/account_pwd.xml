@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/title_bg"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back"
+            android:id="@+id/returnRegister"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号注册"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        >
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <EditText
+
+                android:background="@drawable/edittext_bg"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="2dp"
+                android:hint="验证码"
+                android:id="@+id/code"
+                android:paddingLeft="10dp"/>
+
+            <Button
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:text="重获验证码"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/TextColor"
+                android:background="#444c5c"
+                android:id="@+id/pwd_getcode" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="密码"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edittext_bg"
+            android:inputType="numberPassword"
+            android:id="@+id/pwd_accound" />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="重新输入"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_bg"
+            android:inputType="numberPassword"
+            android:id="@+id/pwd_res_pwd"
+            android:paddingLeft="10dp"/>
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/pwd_register"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/register_select_bg"
+            android:textColor="@color/text_color"
+            android:text="注册"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
